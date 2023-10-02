@@ -1,6 +1,6 @@
 # TriverseTrio
 🌐 TriverseTrio Portfolio Website 
-               My TEAMS
+               My TEAM
 👥 Leo John Molina and Denielle Jayme
 
 🚀 Showcase our creative projects, skills, and passion.
