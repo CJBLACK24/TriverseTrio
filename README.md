@@ -1,4 +1,4 @@
-# TriversweeTrio
+# TriverseTrio
 🌐 TriverseTrio Portfolio Website 
                My TEAMS
 👥 Leo John Molina and Denielle Jayme
