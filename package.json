@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "react-facebook-login": "^4.1.1",
+    "react-icons": "^4.11.0",
+    "swiper": "^10.3.1",
+    "upper-case": "^3.0.0"
+  }
+}

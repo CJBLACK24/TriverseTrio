@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href=" StylingServices.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="preloader"></div>
+	<script>
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+	</script>
+    <header>
+		<img src="images/TriverseTrioLogo.jpg" alt="Logo">
+
+		<nav class="navigation">
+			<a href="TriverseTrio.html">Home</a>
+			<a href="OurServices.html">Services</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="OurBlog.html">Blog</a>
+			<a href="OurSkills.html">Skills</a>
+			<a href="OurGallery.html">Gallery</a>
+			<a href="ContactUs.html"> Contact Us</a>
+		</nav>
+	</header>
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading"><center>Our <span id="HONE">Services</center></span></h2>
+       <center><hr></center> 
+         <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" style="--i:1"class="active" alt="">
+                <div class="portfolio-layer">
+                    <h4> Web Design</h4>
+                    <p> Craft visually appealing, user-centric websites that engage your audience and drive results.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg"  style="--i:2"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4> Graphic Designer</h4>
+                    <p> Elevate your brand with captivating visuals and compelling graphics created by our talented designers.
+                       
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg"  style="--i:3"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4> UI Design</h4>
+                    <p> Ensure a seamless and intuitive user experience with our expertly designed user interfaces.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio4.jpg"  style="--i:4"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4>Responsive Web Design</h4>
+                    <p> Deliver a consistent and accessible web experience across all devices and screen sizes.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio5.jpg"  style="--i:5"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4> UX Design</h4>
+                    <p> Prioritize user satisfaction and loyalty by designing products that are a joy to use.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio6.jpg"  style="--i:6"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4> Web Animation</h4>
+                    <p>Add flair and interactivity to your website with eye-catching animations that grab attention.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg"  style="--i:7"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4> App development</h4>
+                    <p> Bring your app idea to life with our skilled developers, creating solutions that meet your unique needs.
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg"  style="--i:8"class="active"alt="">
+                <div class="portfolio-layer">
+                    <h4> Accessibility</h4>
+                    <p> Make your digital content inclusive and accessible to all, enhancing your reach and impact.
+
+                    </p>
+                    <a href="#"><i class='bx bx-link-external' ></i></a>
+               </div>
+            </div>
+         </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="search">
+        <div class="icon"></div>
+            <div class="input">
+                <input type="text" placeholder="Search" id="mysearch"></div>
+    
+        <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+    </div>
+
+<script>
+const icon = document.querySelector('.icon');
+const search = document.querySelector('.search');
+icon.onclick = function(){
+    search.classList.toggle('active')
+}
+</script>
+
+<script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+<script>
+    var modal = document.getElementById('login-form');
+    window.onclick = function(event) 
+    {
+        if (event.target == modal) 
+        {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+<div class="FOOTERS">
+    <div class="FOOTER">
+        <h1><span id="COLOR"> SOCIAL LINKS</span></h1>
+        <p>Follow us on Twitter, Youtube and <br> Faceook to stay up-to-date with<br> the latest news and updates.</p><br><br>
+        <div class="SocialTWO">
+                    <a href="https://www.facebook.com/CJBLACKSheeshhhh/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a><br>
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.youtube.com/watch?v=WxOulfAfKvk"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/CJBLACK24/TriverseTrio"><i class="fa-brands fa-github"></i></i></a>        
+                </div>
+        </div>
+    <div class="FOOTER">
+        <h1><span id="COLOR"> LATEST NEWS</span></h1>
+
+        <p id="ft-1"><img src="images/coffeebreakfirst.jpg">&nbsp;&nbsp;Triverse Trio Family <br> &nbsp; October 10, 2023
+        </p>
+    </div>
+    
+    <div class="FOOTER">
+        <h1> <span id="COLOR">BUSINESS HOURS</span></h1>
+        <p> Support is available when you need it call <br>
+            our Philippines hotline at <span>+639217582386</span><br> 
+            during our business hours 8:00am to 4:00pm,   <br>
+            and our team will be happy to assist you.<br>
+          <br></p>
+        <p> Our business hours are <span>Monday to Friday,<br>
+            from 8:00am to 4:00pm</span>. We`re closed on<br>
+            weekends and holidays, but you can still<br>
+            reach us via email or phone and we`ll <br>
+            respond as soon as possible.</p>
+            
+    </div>
+</div>
+<p id="TRIVERSE2023"> © 2023 <span>Triverse Trio</span> - All Right Reserved.</p>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+    })
+</script>
+<script>
+ScrollReveal({
+      reset: true,
+      distance: '80px', 
+      duration: 2000,
+      delay:200
+     });
+     ScrollReveal().reveal('.container .hero-text h1', { origin: 'left'});
+     ScrollReveal().reveal('.container .hero-text p', { origin: 'right'});
+     ScrollReveal().reveal('.social a', { origin: 'left'});
+     ScrollReveal().reveal('.navigation', { origin: 'bottom'});
+     ScrollReveal().reveal('.search', { origin: 'top'}); 
+     ScrollReveal().reveal('img', { origin: 'left'});
+     ScrollReveal().reveal('.FOOTER h1', { origin: 'top'});
+     ScrollReveal().reveal('.FOOTER p', { origin: 'bottom'});
+     ScrollReveal().reveal('.SocialTWO', { origin: 'bottom'});
+     ScrollReveal().reveal('.container .hero-text button', { origin: 'right'});
+     ScrollReveal().reveal('.btnLogin-popup', { origin: 'left'});
+     ScrollReveal().reveal('#TRIVERSE2023', { origin: 'left'});
+    </script>
+    <iframe width="560" height="1" src="https://www.youtube.com/embed/WxOulfAfKvk?si=CHQuEv7BcBFlj2iK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

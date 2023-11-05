@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,
+	initial-scale=1.0">
+	<title> Triverse-Trio-Blog </title>
+	<link rel="stylesheet" href="StylingBlog.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<div id="preloader"></div>
+
+	<header>
+		<img src="images/TriverseTrioLogo.jpg" alt="Logo">
+
+		<nav class="NavBar">
+			<a href="TriverseTrio.html">Home</a>
+			<a href="OurServices.html">Services</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="OurBlog.html">Blog</a>
+			<a href="OurSkills.html">Skills</a>
+			<a href="OurGallery.html">Gallery</a>
+            <a href="ContactUs.html">Contact Us</a>
+		</nav>
+	</header>
+<center><h1>Our <span>Blog</span></h1></center>
+<center><hr></center>
+ <div class="img-slider">
+        <div class="slide active">
+            <img src="images/vision.jpg" alt="">
+            <div class="info">
+                <h2>Discover Our Vision</h2>
+                <p>At Triverse Trio, we believe in the power of creative collaboration.
+                     Our vision is to blend design, technology, and content to create immersive
+                      digital experiences that captivate and inspire. Join us on a journey to 
+                      explore the limitless possibilities of the digital world.
+                  </p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/UXDSIGNS.webp" alt="">
+            <div class="info">
+                <h2>Crafting Stunning Designs</h2>
+                <p> Our team's artistic talent shines through in every project.
+                     We're dedicated to crafting stunning designs that not only
+                      catch the eye but also communicate your brand's essence. 
+                      Let our visual storytelling elevate your online presence.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/webdevelopment.jpg" alt="">
+            <div class="info">
+                <h2>Seamless Web Development</h2>
+                <p> Behind every great design is seamless web development.
+                     Our tech wizardry ensures your website functions flawlessly on all devices.
+                     We take pride in creating a web experience that's as beautiful on the inside
+                      as it is on the outside.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/GIF3.gif" alt="">
+            <div class="info">
+                <h2> Figma-Inspired Innovation</h2>
+                <p> Our Figma designs fuel our innovation. Just as Figma empowers designers with limitless possibilities,
+                     we use its inspiration to push the boundaries of web design, ensuring your project is unique and remarkable.</p>
+            </div>
+        </div>
+
+        <div class="slide">
+            <img src="images/UserExperiences.jpg" alt="">
+            <div class="info">
+                <h2>Elevating User Experience</h2>
+                <p> At Triverse Trio, UX is more than an acronym; it's the heart of our designs.
+                     We craft experiences that delight, ensuring your audience stays 
+                     engaged and connected with your brand.</p>
+            </div>
+        </div>
+       <div class="slide">
+            <img src="images/UserExperiences.jpg" alt="">
+            <div class="info">
+                <h2>Elevating User Experience</h2>
+                <p> At Triverse Trio, UX is more than an acronym; it's the heart of our designs.
+                     We craft experiences that delight, ensuring your audience stays 
+                     engaged and connected with your brand.</p>
+            </div>
+        </div>
+        
+        <div class="navigations">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+
+        var manualNav = function(manual){
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+
+                });
+            });
+
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });  
+        });
+
+
+
+        var repeat = function(activeClass){
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function(){
+[...active].forEach((activeSlide) => {
+activeSlide.classList.remove('active');
+});
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+
+                    if(slide.length == i){
+                        i = 0
+                    }
+                    if(i >= slides.length){
+                        return;
+                    }
+                    repeater();
+                },10000);
+                }
+                repeater();
+
+   
+            }
+    </script>
+
+
+<div class="FOOTERS">
+    <div class="FOOTER">
+        <h1><span id="COLOR"> SOCIAL LINKS</span></h1>
+        <p>Follow us on Twitter, Youtube and <br> Faceook to stay up-to-date with<br> the latest news and updates.</p><br><br>
+        <div class="SocialTWO">
+                    <a href="https://www.facebook.com/CJBLACKSheeshhhh/"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a><br>
+                    <a href="#"><i class="fa-solid fa-mug-hot"></i></i></a>
+                    <a href="https://www.youtube.com/watch?v=WxOulfAfKvk"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-solid fa-gift"></i></a>        
+                </div>
+        </div>
+    <div class="FOOTER">
+        <h1><span id="COLOR"> LATEST NEWS</span></h1>
+
+        <p id="ft-1"><img src="coffeebreakfirst.jpg">&nbsp;&nbsp;Triverse Trio Family <br> &nbsp; October 10, 2023
+        </p>
+        
+    </div>
+    <div class="FOOTER">
+        <h1> <span id="COLOR">BUSINESS HOURS</span></h1>
+        <p> Support is available when you need it call <br>
+            our Philippines hotline at <span>+639217582386</span><br> 
+            during our business hours 8:00am to 4:00pm,   <br>
+            and our team will be happy to assist you.<br>
+          <br></p>
+        <p> Our business hours are <span>Monday to Friday,<br>
+            from 8:00am to 4:00pm</span>. We`re closed on<br>
+            weekends and holidays, but you can still<br>
+            reach us via email or phone and we`ll <br>
+            respond as soon as possible.</p>
+    </div>
+</div>
+
+<p id="TRIVERSE2023"> © 2023 <span>Triverse Trio</span> - All Right Reserved.</p>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+
+<script>
+ScrollReveal({
+  reset: true,
+  distance: '80px', 
+  duration: 2000,
+  delay:200
+ });
+
+ ScrollReveal().reveal('.container .hero-text h1', { origin: 'left'});
+ ScrollReveal().reveal('.container .hero-text p', { origin: 'right'});
+ ScrollReveal().reveal('.social a', { origin: 'left'});
+
+ ScrollReveal().reveal('.container .hero-text h1', { origin: 'left'});
+ ScrollReveal().reveal('.container .hero-text p', { origin: 'right'});
+ ScrollReveal().reveal('.social a', { origin: 'left'});
+ ScrollReveal().reveal('.navigation', { origin: 'bottom'});
+ ScrollReveal().reveal('.search', { origin: 'top'}); 
+ ScrollReveal().reveal('img', { origin: 'left'});
+
+
+ ScrollReveal().reveal('.navigation', { origin: 'bottom'});
+ ScrollReveal().reveal('.search', { origin: 'top'}); 
+ ScrollReveal().reveal('img', { origin: 'left'});
+ ScrollReveal().reveal('.FOOTER h1', { origin: 'top'});
+ ScrollReveal().reveal('.FOOTER p', { origin: 'bottom'});
+ ScrollReveal().reveal('.SocialTWO', { origin: 'bottom'});
+ ScrollReveal().reveal('.container .hero-text button', { origin: 'right'});
+ ScrollReveal().reveal('.btnLogin-popup', { origin: 'left'});
+
+
+</script>
+
+ <div class="search">
+			<div class="icon"></div>
+				<div class="input">
+					<input type="text" placeholder="Search" id="mysearch"></div>
+		
+			<span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+		</div>
+
+<script>
+	const icon = document.querySelector('.icon');
+	const search = document.querySelector('.search');
+	icon.onclick = function(){
+		search.classList.toggle('active')
+	}
+</script>
+	
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+        
+
+    </script>
+
+
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+ScrollReveal({
+      reset: true,
+      distance: '80px', 
+      duration: 2000,
+      delay:200
+     });
+	 ScrollReveal().reveal('.container .hero-text h1', { origin: 'left'});
+     ScrollReveal().reveal('.container .hero-text p', { origin: 'right'});
+     ScrollReveal().reveal('.social a', { origin: 'left'});
+	 ScrollReveal().reveal('.navigation', { origin: 'bottom'});
+	 ScrollReveal().reveal('.search', { origin: 'top'}); 
+	 ScrollReveal().reveal('img', { origin: 'left'});
+	 ScrollReveal().reveal('.FOOTER h1', { origin: 'top'});
+	 ScrollReveal().reveal('.FOOTER p', { origin: 'bottom'});
+	 ScrollReveal().reveal('.SocialTWO', { origin: 'bottom'});
+	 ScrollReveal().reveal('.container .hero-text button', { origin: 'right'});
+	 ScrollReveal().reveal('.btnLogin-popup', { origin: 'left'});
+	</script>
+	<script>
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+	</script>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/WxOulfAfKvk?si=CHQuEv7BcBFlj2iK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	
+    </body>
+    </html>

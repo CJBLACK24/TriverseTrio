@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="StylingOurSkills.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triverse Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2? family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <div id="preloader"></div>
+	<script>
+		var loader = document.getElementById("preloader");
+
+		window.addEventListener("load", function(){
+			loader.style.display = "none";
+		})
+	</script>
+    <header>
+		<img src="images/TriverseTrioLogo.jpg" alt="Logo">
+		<nav class="navigation">
+			<a href="TriverseTrio.html">Home</a>
+			<a href="OurServices.html">Services</a>
+			<a href="AboutUs.html">About Us</a>
+			<a href="OurBlog.html">Blog</a>
+			<a href="OurSkills.html">Skills</a>
+			<a href="OurGallery.html">Gallery</a>
+            <a href="ContactUs.html">Contact Us</a>
+
+		</nav>
+	</header>
+
+
+
+
+
+    <section id="skills" class="skills">
+        <div class="main-text">
+            <span style="position: relative;bottom:3rem;font-size: 2rem;letter-spacing: .5rem;"><center> Technical and Professional</center></span>
+            <h2 style="color: var(--main-color); font-weight: 600;"><center>Our Skills</center></h2>
+        </div>
+    
+        <div class="skill-main">
+            <div class="skill-left">
+                <h3 style="color: var(--main-color);">Technical Skills</h3>
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <p>72%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>Figma</p>
+                        <p>90%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="figma"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>JavaScript</p>
+                        <p>80%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="javascript"></span>
+                    </div>
+                </div>
+    
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <p>62%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+
+                <div class="skill-bar">
+                    <div class="info">
+                        <p>PHP</p>
+                        <p>87%</p>
+                    </div>
+                    <div class="bar">
+                        <span class="PHP"></span>
+                    </div>
+                </div>
+
+                
+    
+            </div>
+            <div class="skill-right">
+                <h3>Professional Skills</h3>
+                <div class="professional">
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="90">
+                            
+                        </div>
+                        <div class="text">
+                            <big>90%</big>
+                            <small>Team Work</small>
+                        </div>
+                    </div>
+    
+                    <div class="box" id="BOXTWO">
+                        <div class="circle" data-dots="80" data-percent="80">
+
+                        </div>
+                        <div class="text">
+                            <big id="BIG">80%</big>
+                            <small>Creativity</small>
+                        </div>
+                    </div>
+    
+                    <div class="box">
+                        <div class="circle" data-dots="80" data-percent="55">
+
+                        </div>
+                        <div class="text">
+                            <big>55%</big>
+                            <small>Project Management</small>
+                        </div>
+                    </div>
+    
+                    <div class="box"id="BOXTWO" >
+                        <div class="circle" data-dots="80" data-percent="70"></div>
+                        <div class="text">
+                            <big id="BIG">70%</big>
+                            <small>Communication</small>
+                        </div>
+                    </div>
+    </div>
+</div>
+</div>
+    </section>
+
+    <div class="search">
+        <div class="icon"></div>
+            <div class="input">
+                <input type="text" placeholder="Search" id="mysearch"></div>
+    
+        <span class="clear" onclick="document.getElementById('mysearch').value = ''"></span>
+    </div>
+
+<script>
+const icon = document.querySelector('.icon');
+const search = document.querySelector('.search');
+icon.onclick = function(){
+    search.classList.toggle('active')
+}
+</script>
+
+    <div class="FOOTERS">
+		<div class="FOOTER">
+			<h1><span id="COLOR"> SOCIAL LINKS</span></h1>
+			<p>Follow us on Twitter, Youtube and <br> Faceook to stay up-to-date with<br> the latest news and updates.</p><br><br>
+			<div class="SocialTWO">
+						<a href="https://www.facebook.com/CJBLACKSheeshhhh/"><i class="fa-brands fa-square-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a><br>
+						<a href="#"><i class="fa-solid fa-mug-hot"></i></i></a>
+						<a href="https://www.youtube.com/watch?v=WxOulfAfKvk"><i class="fa-brands fa-youtube"></i></a>
+						<a href="#"><i class="fa-solid fa-gift"></i></a>        
+					</div>
+			</div>
+		<div class="FOOTER">
+			<h1><span id="COLOR"> LATEST NEWS</span></h1>
+	
+			<p id="ft-1"><img src="coffeebreakfirst.jpg">&nbsp;&nbsp;Triverse Trio Family <br> &nbsp; October 10, 2023
+			</p>
+			
+		</div>
+		<div class="FOOTER">
+			<h1> <span id="COLOR">BUSINESS HOURS</span></h1>
+			<p> Support is available when you need it call <br>
+				our Philippines hotline at <span>+639217582386</span><br> 
+			    during our business hours 8:00am to 4:00pm,   <br>
+				and our team will be happy to assist you.<br>
+			  <br></p>
+			<p> Our business hours are <span>Monday to Friday,<br>
+				from 8:00am to 4:00pm</span>. We`re closed on<br>
+				weekends and holidays, but you can still<br>
+				reach us via email or phone and we`ll <br>
+				respond as soon as possible.</p>
+		</div>
+	</div>
+	
+	<p id="TRIVERSE2023"> © 2023 <span>Triverse Trio</span> - All Right Reserved.</p>
+
+	
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+ScrollReveal({
+      reset: true,
+      distance: '80px', 
+      duration: 2000,
+      delay:200
+     });
+	 ScrollReveal().reveal('.container .hero-text h1', { origin: 'left'});
+     ScrollReveal().reveal('.container .hero-text p', { origin: 'right'});
+     ScrollReveal().reveal('.social a', { origin: 'left'});
+	 ScrollReveal().reveal('.navigation', { origin: 'bottom'});
+	 ScrollReveal().reveal('.search', { origin: 'top'}); 
+	 ScrollReveal().reveal('img', { origin: 'left'});
+	 ScrollReveal().reveal('.FOOTER h1', { origin: 'top'});
+	 ScrollReveal().reveal('.FOOTER p', { origin: 'bottom'});
+	 ScrollReveal().reveal('.SocialTWO', { origin: 'bottom'});
+	 ScrollReveal().reveal('.container .hero-text button', { origin: 'right'});
+	 ScrollReveal().reveal('.btnLogin-popup', { origin: 'left'});
+
+
+
+
+
+     
+
+	</script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="jquery-circle-progress/dist/circle-progress.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="jquery-circle-progress/dist/circle-progress.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="skills.js"></script>
+<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+<script>
+	ScrollReveal({
+		  reset: true,
+		  distance: '80px', 
+		  duration: 2000,
+		  delay:200
+		 });
+		 ScrollReveal().reveal('.container .hero-text h1', { origin: 'left'});
+		 ScrollReveal().reveal('.container .hero-text p', { origin: 'right'});
+		 ScrollReveal().reveal('.social a', { origin: 'left'});
+		 ScrollReveal().reveal('.navigation', { origin: 'bottom'});
+		 ScrollReveal().reveal('.search', { origin: 'top'}); 
+		 ScrollReveal().reveal('img', { origin: 'left'});
+		 ScrollReveal().reveal('.FOOTER h1', { origin: 'right'});
+		 ScrollReveal().reveal('.FOOTER p', { origin: 'left'});
+		 ScrollReveal().reveal('.SocialTWO', { origin: 'bottom'});
+		 ScrollReveal().reveal('.container .hero-text button', { origin: 'right'});
+		 ScrollReveal().reveal('.btnLogin-popup', { origin: 'left'});
+		 
+		</script>
+	
+	<iframe width="560" height="1" src="https://www.youtube.com/embed/WxOulfAfKvk?si=CHQuEv7BcBFlj2iK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		
+</body>
+</html>
